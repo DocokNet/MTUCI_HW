@@ -3,8 +3,7 @@ city = "Moscow,RU"
 appid = "26903477b329812d92afe3d0a1171e90"
 s_city = "Москва"
 
-res = requests.get("http://api.openweathermap.org/data/2.5/weather",
-params={'q': s_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
+res = requests.get("http://api.openweathermap.org/data/2.5/weather", params={'q': s_city, 'units': 'metric', 'lang': 'ru', 'APPID': appid})
 data = res.json()
 
 print("Город:", s_city)
