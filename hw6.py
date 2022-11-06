@@ -128,7 +128,7 @@ class Calculator(QWidget):
     
     def _operation(self, op):
         s = self.input.text()
-        if s != '':
+        if s:
             try:
                 self.num_1 = float(s)
                 self.op = op
@@ -160,8 +160,12 @@ class Calculator(QWidget):
                 '*': self.num_1 * self.num_2,
                 '/': self.div(self.num_1, self.num_2)
             }
-
-            self.input.setText(f"{ops[self.op]:.3f}")
+            
+            n = ops[self.op]
+            if int(n) == n:
+                self.input.setText(f"{ops[self.op]}")
+            else:
+                self.input.setText(f"{ops[self.op]:.3f}")
 
 
 app = QApplication(sys.argv)
