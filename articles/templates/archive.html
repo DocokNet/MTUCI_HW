@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Django Public Blog - статьи</title>
+        {% load static %}
+        <script src="/articles/static/js/helloworld.js"></script>
+        <link rel="stylesheet" href="/articles/static/article.css">
+    </head>
+    <body class="archive">
+        
+        <div class="header-archive">
+            <img src="/articles/static/1.jpg" width="150" height="100"/>
+            
+            {% if request.user.is_anonymous %} 
+                <a href="{% url 'registration' %}"><h1 class="all-posts">Регистрация</h1></a>
+                <a href="{% url 'login' %}"><h1 class="all-posts">Войти</h1>
+                {% else %}
+                <a href="{% url 'new_post' %}"><h1 class="all-posts">Написать новую статью</h1></a>
+                <a href="{% url 'exit' %}"><h1 class="all-posts">Выйти</h1></a>
+            {% endif %}
+
+        </div>
+        <div class="archive">
+            {% for post in posts %}
+                <div class="one-post">
+                <a href="article/{{ post.id }}"><h2 class="post-title">{{ post.title }}</h2></a>
+                    <div class="article-info">
+                        <div class="article-author">{{ post.author.username }}</div>
+                        <div class="article-created-date">{{ post.created_date }}</div>
+                    </div>
+                <p class="article-text">{{ post.get_excerpt }}</p>
+                </div>
+            {% endfor %}
+               
+        </div>        
+        
+    </body>
+</html>

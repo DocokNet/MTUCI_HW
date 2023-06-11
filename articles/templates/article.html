@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django - статья</title>
+    <link rel="stylesheet" href="../../static/article.css">
+</head>
+    <body class="article">
+        <div class="header-article">
+            <img src="../../static/1.jpg" width="150" height="100" />
+            <a href="{% url 'archive' %}"><h1 class="all-posts">Все статьи</h1></a>
+            {% if request.user.is_anonymous %}
+                <a href="{% url 'registration' %}"><h1 class="registration-h1">Регистрация</h1></a>
+            {% endif %}
+        </div>
+
+        <h2 class="post-title">{{ post.title }}</h2>
+            <div class="article-info">
+                <div class="article-author">{{ post.author.username }}</div>
+                <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+        <p class="article-text">{{ post.text }}</p>
+    </body>
+</html>

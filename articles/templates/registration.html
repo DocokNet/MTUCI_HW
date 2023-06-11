@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django - регистрация</title>
+    <link rel="stylesheet" href="../../static/article.css">
+</head>
+    <body class="registration-body">
+        <div class="content"></div>
+            <div class="header-archive">
+                <img src="../../static/1.jpg" width="150" height="100" />
+                <a href="{% url 'archive' %}"><h1 class="all-posts">Все статьи</h1></a>
+                <a href="{% url 'login' %}"><h1 class="all-posts">Войти</h1></a>
+            </div>
+
+            <form class="registration-fields" method="POST">{% csrf_token %}
+                <input type="text" name="username" placeholder="Логин" value="{{ form.username }}">
+                <input type="email" name="email" placeholder="Почта" value="{{ form.email }}">
+                <input type="password" name="password" placeholder="Пароль" value="{{ form.password }}">
+                <input class="save-fields" type="submit" value="Зарегистрироваться">
+            </form>
+            {{ form.errors }}
+        </div>
+
+    </body>
+</html>

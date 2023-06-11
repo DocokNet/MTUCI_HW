@@ -1,0 +1,184 @@
+.article
+{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+} 
+
+.registration-body
+{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+}
+
+.login-body
+{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+}
+
+.header-article img 
+{
+    display: inline; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.header-article h1
+{
+    float: right;
+    display: inline; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.header-archive
+{
+    display: inline;
+}
+
+.header-archive img
+{
+    left: 0;
+}
+
+.header-archive h1
+{
+    float: right;
+}
+
+a h1
+{
+    text-decoration-line: underline;
+    color: #ffffff;
+}
+
+a h2
+{
+    color: #ffffff;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.archive 
+{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+    
+}
+
+.article-author 
+{ 
+    width: 50%; 
+    float: left;
+    font-weight: bold;
+}
+ 
+.article-created-date 
+{ 
+    text-align: right;
+    font-style: italic;
+}
+
+.create_post
+{
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif; 
+    color: #ffffff;
+}
+
+.create-post-form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;    
+}
+
+.save-input
+{
+    width: 10%;
+    position: relative; 
+    left: 90%;
+}
+
+.header-create-post 
+{
+    display: inline;
+    margin: auto;
+    padding: auto;
+}
+
+.header-create-post img 
+{
+    left: 0;
+}
+
+.header-create-post h1 
+{
+    float: right;
+}
+
+.page-title
+{
+    float: left;
+    display: inline;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.registration-fields
+{
+    display: flex;
+    flex-direction: column;
+    padding: 40%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.login-fields
+{
+    display: flex;
+    flex-direction: column;
+    padding: 40%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.save-fields
+{
+    align-self: center;
+    width: 60%;
+}
+
+.create-post-form
+{
+    margin-top: 5%;
+}
+
+.header-login
+{
+    display: inline;
+}
+
+.header-login img
+{
+    left: 0;
+}
+
+.header-login h1
+{
+    float: right;
+}
+
+.all-posts
+{
+    margin-left: 5%;
+}

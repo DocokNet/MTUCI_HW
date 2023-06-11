@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Public Blog - создать статью</title>
+    <link rel="stylesheet" href="../../static/article.css">
+</head>
+    <body class="create_post">
+        <div class="content">
+            <div class="header-create-post">
+                <img src="../../static/1.jpg" width="150" height="100" />
+                <a href="{% url 'archive' %}"><h1 class="all-posts">Все статьи</h1></a>
+            </div>
+            <form class="create-post-form" method="POST">{% csrf_token %}
+                <input type="text" name="title" placeholder="Название статьи" value="{{ form.title }}">
+                <textarea name="text" placeholder="Текст статьи">{{ form.text }}</textarea>
+                <input class="save-input" type="submit" value="Сохранить">
+            </form>
+            {{ form.errors }}
+        </div>
+    </body>
+</html>
