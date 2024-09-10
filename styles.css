@@ -1,16 +1,105 @@
 body {
-    padding: 0;
+    background: #0e1015;
+    font: 15px/30px "merriweather-regular", serif;
+    font-weight: normal;
+    color: #0e1015;
     margin: 0;
+    padding: 0;
 }
 .header-panel {
     width: 100%;
 }
 .header-div {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgba(107, 211, 255, 1);   
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2a2c33;
+    width: 100%;
 }
-.footer-panel {
-     
+
+footer {
+    margin-top: 37%;
+}
+
+.footer-div {
+    background: #2a2c33;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.vk-logo {
+    margin-right: 10px;
+}
+
+/* Typography--------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "raleway-bold", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin: 18px 0 15px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 0;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 13px;
+  line-height: 30px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  margin: 15px 0 15px 0;
+  color: #ffffff;
+  font: 17px/33px "merriweather-light", serif;
 }
