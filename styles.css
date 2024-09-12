@@ -15,10 +15,17 @@ body {
     justify-content: space-around;
     background-color: #2a2c33;
     width: 100%;
+    padding-bottom: 10;
+    padding-top: 10;
+}
+
+#blog-logo {
+  position: relative;
+  right: 22%;
 }
 
 footer {
-    margin-top: 37%;
+    margin-top: 38%;
 }
 
 .footer-div {
@@ -36,6 +43,17 @@ footer {
     margin-right: 10px;
 }
 
+.f1 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.main-panel {
+  margin: 15 0 0 15;
+}
+
 /* Typography--------------------------------------------------------------------- */
 
 h1,
@@ -49,6 +67,14 @@ h6 {
   font-style: normal;
   text-rendering: optimizeLegibility;
   margin: 18px 0 15px;
+}
+
+li,
+ol {
+  font-family: "raleway-bold", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
 }
 
 h1 a,
