@@ -48,6 +48,8 @@ footer {
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
+  font: 17px/33px "raleway-bold", sans-serif;
+  color: #ffffff;
 }
 
 .main-panel {
