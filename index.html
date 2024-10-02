@@ -11,33 +11,42 @@
                     <img src="skpo logo.png">
                 </div>
                 <div id="header-body">
-                    <h1>Мой блог</h1>
+                    <h1 style="margin: 0;">Мой блог</h1>
+                </div>
+                <div id="theme-switcher">
+                    <button id="btn-theme-switcher" class="btn">Сменить тему</button>
                 </div>
             </div>
         </header>
         <main class="main-panel">
             <!-------------------------------------------------->
-            <h1>О себе</h1>
-            <p class="f1">
-                Всем большой привет!)
-            </p>
-            <p class="f1">
-                Меня зовут Михаил и я начинающий Android-разработчик (именно поэтому этот блог такой страшный внешне 0_0)
-            </p>
-            <p class="f1">
+            <h1 style="margin: 0 0 5 0;">О себе</h1>
+            <p class="f1" id="more-info" style="display: none;">
+                Всем большой привет!) <br>
+                Меня зовут Михаил и я начинающий Android-разработчик (именно поэтому этот блог такой страшный внешне 0_0) <br>
                 На данный момент я живу мечтой о трудоустройстве на стажировку в WBTech, но для этого мне предстоит пройти ещё долгий путь.
             </p>
-            <h1 style="margin-top: 10;">Мои проекты</h1>
+            <button id="toggle-more">Показать больше</button>
             <!-------------------------------------------------->
-            <p class="f1">
-                Список моих проектов или проектов с моим участием:
-            </p>
-            <ol id="projects-list">
-                <li>Сайт-подсказка для приёмной комиссии МТУСИ (поддержка и обновление информации) - <a href="https://github.com/3elt3er/MTUCI">https://github.com/3elt3er/MTUCI</a> </li>
-                <li>Мобильное приложение по учёту ежедневных расходов и доходов - <a href="https://github.com/Vitasz/UWasting">https://github.com/Vitasz/UWasting</a></li>
-                <li>Репозиторий с школьными заданиями по web-разработке - <a href="https://github.com/DocokNet/INFProjectsRepo">https://github.com/DocokNet/INFProjectsRepo</a></li>
-                <li>Ссылка на профиль на leetcode - <a href="https://leetcode.com/u/DocokNet/">https://leetcode.com/u/DocokNet/</a></li>
-            </ol>
+            <div id="projects">
+                <h1 style="margin-top: 10;">Мои проекты</h1>
+                <p class="f1">
+                    Список моих проектов или проектов с моим участием:
+                </p>
+                <ol id="projects-list">
+                    <li>Сайт-подсказка для приёмной комиссии МТУСИ (поддержка и обновление информации) - <a href="https://github.com/3elt3er/MTUCI">https://github.com/3elt3er/MTUCI</a> </li>
+                    <li>Мобильное приложение по учёту ежедневных расходов и доходов - <a href="https://github.com/Vitasz/UWasting">https://github.com/Vitasz/UWasting</a></li>
+                    <li>Репозиторий с школьными заданиями по web-разработке - <a href="https://github.com/DocokNet/INFProjectsRepo">https://github.com/DocokNet/INFProjectsRepo</a></li>
+                    <li>Ссылка на профиль на leetcode - <a href="https://leetcode.com/u/DocokNet/">https://leetcode.com/u/DocokNet/</a></li>
+                </ol>
+                <div class="slider">
+                    <img id="slider-image" src="proj1.png" style="align-self: center;"/>
+                    <div id="slider-buttons">
+                        <button id="prev-button" class="btn">Назад</button>
+                        <button id="next-button" class="btn">Вперед</button>
+                    </div>
+                </div>
+            </div>
             <!-------------------------------------------------->
             <div class="skills">
                 <div class="skill">
@@ -88,5 +97,6 @@
             </div>
             
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
